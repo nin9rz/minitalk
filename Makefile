@@ -3,6 +3,7 @@ NAMESERVER = server
 
 SOURCES = 	src/ft_printf_utils.c\
 			src/ft_printf.c\
+			src/libft/ft_atoi.c
 
 SERVER = server.c
 CLIENT = client.c
@@ -43,7 +44,7 @@ nin9rz :
 	@printf "\033[0;34m\n"
 	@echo "                     __                    "
 	@echo "       __          /'_ `\                  "
-	@echo "  ___ /\_\    ___ /\ \L\ \  _ __   ____    "
+	@echo "  ___ /\_\    ___ /\ \ \ \  _ __   ____    "
 	@echo "/' _ `\/\ \ /' _ `\ \___, \/\`'__\/\_ ,`\  "
 	@echo "/\ \/\ \ \ \/\ \/\ \/__,/\ \ \ \/ \/_/  /_ "
 	@echo "\ \_\ \_\ \_\ \_\ \_\   \ \_\ \_\   /\____\"
