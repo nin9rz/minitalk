@@ -6,7 +6,7 @@
 /*   By: jenibaud <jenibaud@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 18:21:26 by jenibaud          #+#    #+#             */
-/*   Updated: 2024/12/12 18:10:34 by jenibaud         ###   ########.fr       */
+/*   Updated: 2024/12/13 14:45:48 by jenibaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define MINITALK_H
 
 # include "src/ft_printf.h"
-# include "src/libft/libft.h"
+# include <libft.h>
 # include <signal.h>
 
 #endif

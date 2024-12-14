@@ -52,21 +52,21 @@ BONUS_SRC = ft_lstnew_bonus.c\
 BONUS_OBJ = $(BONUS_SRC:.c=.o)
 
 %.o:%.c
-	cc $(CFLAGS) $< -c -o $@
+	@cc $(CFLAGS) $< -c -o $@
 
 $(NAME): $(COBJ)
-	ar rcs $(NAME) $(COBJ)
+	@ar rcs $(NAME) $(COBJ)
 
 bonus: $(BONUS_OBJ) $(NAME)
 	ar rcs $(NAME) $(BONUS_OBJ)
 
 clean: 
-	rm -f $(COBJ) 
-	rm -f $(BONUS_OBJ)
+	@rm -f $(COBJ) 
+	@rm -f $(BONUS_OBJ)
 
 fclean: clean
-	rm -f $(NAME)
-	rm -f libft.so
+	@rm -f $(NAME)
+	@rm -f libft.so
 
 all: $(NAME)
 
