@@ -6,7 +6,7 @@
 /*   By: jenibaud <jenibaud@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 13:44:53 by jenibaud          #+#    #+#             */
-/*   Updated: 2024/12/14 02:48:15 by jenibaud         ###   ########.fr       */
+/*   Updated: 2024/12/16 14:14:16 by jenibaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,13 +49,17 @@ static void	ft_send_bits(int pid, char i)
 
 int	main(int argc, char **argv)
 {
-	int	pid;
-	int	i;
+	unsigned int	pid;
+	int				i;
 
 	i = 0;
 	if (argc == 3)
 	{
 		pid = ft_atoi(argv[1]);
+		if (pid <= -1)
+		{
+			return (0);
+		}
 		while (argv[2][i] != '\0')
 		{
 			ft_send_bits(pid, argv[2][i]);
@@ -65,8 +69,7 @@ int	main(int argc, char **argv)
 	}
 	else
 	{
-		ft_printf("\033[91mError: wrong format.\033[0m\n");
-		ft_printf("\033[33mTry: ./client <PID> <MESSAGE>\033[0m\n");
+		ft_printf("Error: wrong format.Try: ./client <PID> <MESSAGE>\n");
 		return (1);
 	}
 	return (0);

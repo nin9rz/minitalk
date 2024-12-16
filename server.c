@@ -6,7 +6,7 @@
 /*   By: jenibaud <jenibaud@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 16:07:03 by jenibaud          #+#    #+#             */
-/*   Updated: 2024/12/13 18:36:22 by jenibaud         ###   ########.fr       */
+/*   Updated: 2024/12/16 14:14:16 by jenibaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,8 +65,8 @@ int	main(int argc, char **argv)
 	struct sigaction	sa;
 
 	sa.sa_sigaction = ft_handler;
-    sigemptyset(&sa.sa_mask);
-    sa.sa_flags = SA_SIGINFO;
+	sigemptyset(&sa.sa_mask);
+	sa.sa_flags = SA_SIGINFO;
 	(void)argv;
 	if (argc != 1)
 	{
