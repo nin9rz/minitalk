@@ -6,7 +6,7 @@
 /*   By: jenibaud <jenibaud@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/09 13:44:53 by jenibaud          #+#    #+#             */
-/*   Updated: 2024/12/16 14:14:16 by jenibaud         ###   ########.fr       */
+/*   Updated: 2024/12/16 14:22:12 by jenibaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,8 @@ static void	ft_send_bits(int pid, char i)
 
 int	main(int argc, char **argv)
 {
-	unsigned int	pid;
-	int				i;
+	int	pid;
+	int	i;
 
 	i = 0;
 	if (argc == 3)
